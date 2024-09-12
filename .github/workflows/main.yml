@@ -40,5 +40,4 @@ jobs:
             echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
             echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
 
-            pip install -r requirements.txt
             sudo systemctl restart site.service
